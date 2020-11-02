@@ -8,9 +8,9 @@ body {
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
-  background-color: #02005b;
+  background-color: #02afff;
   color: rgba(255, 255, 255, 0.95);
-  font-size: 15px;
+  font-size: 16px;
   line-height: 28px;
   letter-spacing: 1px;
 }
@@ -35,9 +35,9 @@ h2:after {
 }
 h4 {
   margin: 0;
+  font-size: 20px;
   margin-top: 40px;
-  opacity: 0.8;
-  font-weight: 400;
+  font-weight: 800;
 }
 a {
   color: white;
