@@ -2,13 +2,33 @@
   /*   border: solid 1px black; */
   font-family: "微軟正黑體", sans-serif;
 }
+@-webkit-keyframes ro {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes ro {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 body {
   padding: 50px;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
           justify-content: center;
-  background-color: #02afff;
+  background-color: #006f9b;
   color: rgba(255, 255, 255, 0.95);
   font-size: 16px;
   line-height: 28px;
@@ -80,15 +100,55 @@ hr {
 }
 
 .decoration {
-  width: 300px;
-  height: 140px;
-  background: linear-gradient(135deg, #ff5f5f, #ffffae);
-  border-radius: 70px 0px 0px 70px;
+  width: 400px;
+  height: 200px;
+  /*   border: 1px solid #f2f2f2; */
   position: absolute;
-  right: 0;
-  top: 50px;
+  right: 10px;
+  top: 10px;
+  margin: auto;
+  border-radius: 50%;
+  -webkit-animation: ro 5s linear infinite;
+          animation: ro 5s linear infinite;
 }
 
+.moon {
+  width: 75px;
+  height: 75px;
+  background-color: #ffe179;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.dot {
+  position: absolute;
+  background-color: #000;
+}
+#dot1 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 0.2;
+  top: 12px;
+  left: 10px;
+}
+#dot2 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.3;
+  top: 25px;
+  left: 30px;
+}
+#dot3 {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  opacity: 0.4;
+  top: 33px;
+  left: 15px;
+}
 .listExperience > li {
   display: -webkit-box;
   display: flex;
